@@ -20,7 +20,7 @@ const makeApiCall = async () => {
 };
 
 // Schedule the API call every 5 minutes
-cron.schedule('*/1 * * * *', () => {
+cron.schedule('* * * * * *', () => {
   makeApiCall();
 });
 
